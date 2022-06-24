@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: admin
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  boot:
+    admin:
+      discovery:
+        ignored-services:
+          - ${spring.application.name}
+eureka:
+  instance:
+    appname: ${spring.application.name}
+    prefer-ip-address: true
+logging:
+  level:
+    # hide eureka heartbeat log
+    com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: warn
+server:
+  port: 20000

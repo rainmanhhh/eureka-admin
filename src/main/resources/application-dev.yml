@@ -1,0 +1,9 @@
+eureka:
+  client:
+    enabled: false
+    service-url:
+      defaultZone: http://192.168.20.26:8761/eureka
+ez:
+  auth:
+    service-api-key:
+      value: 98765432109876543210987654321021
