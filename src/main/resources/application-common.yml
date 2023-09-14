@@ -1,6 +1,8 @@
 spring:
   application:
     name: admin
+  thymeleaf:
+    check-template-location: false
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
