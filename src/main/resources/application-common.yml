@@ -16,6 +16,11 @@ eureka:
     appname: ${spring.application.name}
     prefer-ip-address: true
 logging:
+  file:
+    name: logs/${spring.application.name}.log
+  logback:
+    rollingpolicy:
+      max-file-size: 100MB
   level:
     # hide eureka heartbeat log
     com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: warn

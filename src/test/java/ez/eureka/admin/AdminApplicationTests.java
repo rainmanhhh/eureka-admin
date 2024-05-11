@@ -1,4 +1,4 @@
-package fy.admin;
+package ez.eureka.admin;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

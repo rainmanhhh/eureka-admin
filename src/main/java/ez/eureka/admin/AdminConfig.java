@@ -1,4 +1,4 @@
-package fy.admin;
+package ez.eureka.admin;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
